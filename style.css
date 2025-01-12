@@ -1,155 +1,113 @@
-  /* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text{
+  padding:40px;
+  background:#eee;
+}
+
+.text h3{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding:10px;
+}
+
+.text h3 span{
+  font-size: 3.5rem;
+  text-shadow: 4px 4px 6px rgba(255, 0, 0, 0.397);
+}
+
+.banner-container{
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-container .banner{
+  background:linear-gradient(-55deg, #ff7675 29%, #d63031 29.1%, #d63031 68%, #ff7675 68.1%);
+  border-radius: 5px;
+  margin:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 10px #0005;
+  overflow: hidden;
+}
+
+.banner-container .banner .shoe{
+  flex:1 1 250px;
+  padding:15px;
+  text-align: center;
+}
+
+.banner-container .banner .shoe img{
+  width:80%;
+}
+
+.banner-container .banner .content{
+  flex:1 1 250px;
+  text-align: center;
+  padding:10px;
+  text-transform: uppercase;
+}
+
+
+.banner-container .banner .content span{
+  color:#eee;
+  font-size: 25px;
+}
+.banner-container .banner .content h1{
+  color:#eee;
+  font-size: 2.0rem;
+  margin-bottom: 10%;
+}
+
+
+.banner-container .banner .content h3{
+  color:#fff;
+  font-size: 40px;
+}
+
+.banner-container .banner .content p{
+  color:#eee;
+  font-size: 20px;
+  padding:10px 0;
+}
+
+.banner-container .banner .content .btn{
+  display: block;
+  height:40px;
+  width:150px;
+  line-height: 40px;
+  background: #fff;
+  color:#d63031;
+  margin:5px auto;
+  text-decoration: none;
+}
+
+.banner-container .banner .women{
+  position: relative;
+  bottom: -33px;
+  padding:10px;
+  flex:1 1 250px;
+}
+
+.banner-container .banner .women img{
+  width:100%;
+}
+
+@media (max-width:768px){
+  .banner-container .banner .women{
+      display: none;
   }
 
-  html,
-  body {
-    height: 100vh;
-    width: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   
+  .banner-container .banner .content h1{
+    color:#eee;
+    font-size: 1.5rem
   }
-
-  main{
-    /* background-image: url(https://images.unsplash.com/photo-1616431842618-bdf65d9befd9?q=80&w=3202&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 227%; */
-    /* position: sticky; */
-    
-  /* } */
-
-  /* h1 {
-    margin-bottom: 50%;
-  }
-
-  .view {
-    /* background-color: aquamarine; */
-    /* height: 100vh;
-    width: 100vh;
-  } */
-
-  /* .div1 {
-    display: flex;
-    gap: 10%;
-  } */
-
-  .block-1 {
-    /* border: 2px solid black; */
-    background-color: antiquewhite;
-    /* display: inline; */
-    background-image: url(https://assets.myntassets.com/f_webp,dpr_2.0,q_60,w_210,c_limit,fl_progressive/assets/images/30348913/2024/7/26/17040e48-161a-44de-8b87-01603f2850a11721973382401-BOULT-AUDIO-Unisex-Headphones-1141721973381798-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    width: 20%
-  }
-
-  .block-2 {
-    /* border: 2px solid black; */
-    background-color: rgb(239, 215, 250);
-    background-image: url(https://assets.myntassets.com/f_webp,dpr_2.0,q_60,w_210,c_limit,fl_progressive/assets/images/27909168/2024/3/4/0cac5796-70c5-486a-abc1-b9746f1c7c591709538565338-CMF-Buds-5621709538564915-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* height: 200px; */
-    /* display: inline; */
-    height: 300px;
-    width: 30%
-  }
-
-  .block-3 {
-    /* border: 2px solid black; */
-    background-color: rgb(215, 250, 220);
-    /* display: inline; */
-    height: 340px;
-    background-image: url(https://assets.myntassets.com/f_webp,dpr_2.0,q_60,w_210,c_limit,fl_progressive/assets/images/30348918/2024/7/26/7a388bae-b8b9-4cdd-8bc0-0cb0fb929df71721971113662-BOULT-AUDIO-Unisex-Headphones-3431721971113011-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 40%
-  }
-
-  .div2 {
-    display: flex;
-    gap: 10%;
-  }
-
-  .block-4 {
-    /* border: 2px solid black; */
-    background-color: rgb(250, 215, 215);
-    /* display: inline; */
-    height: 150px;
-    width: 15%
-  }
-
-  .block-5 {
-    /* border: 2px solid black; */
-    background-color: rgb(215, 225, 250);
-    /* display: inline; */
-    height: 220px;
-    width: 18%
-  }
-
-  .block-6 {
-    /* border: 2px solid black; */
-    background-color: rgb(58, 190, 31);
-    /* display: inline; */
-    height: 250px;
-    width: 25%
-  }
-
-  .div3 {
-    display: flex;
-    gap: 10%;
-  }
-
-  .block-7 {
-    /* border: 2px solid black; */
-    background-color: rgb(62, 39, 162);
-    /* display: inline; */
-    height: 280px;
-    width: 29%
-  }
-
-  .block-8 {
-    /* border: 2px solid black; */
-    background-color: rgb(8, 7, 6);
-    /* display: inline; */
-    height: 380px;
-    width: 20%
-  }
-
-  .block-9 {
-    /* border: 2px solid black; */
-    background-color: rgb(239, 148, 29);
-    /* display: inline; */
-    height: 200px;
-    width: 20%
-  }
-
-  .block {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
-
-  @keyframes appear {
-    from {
-      opacity: 0;
-      /* scale: 0.5; */
-      /* transform: translateX(-100px); */
-      clip-path: inset(100% 100% 0 0);
-    }
-
-    to {
-      opacity: 1;
-      /* scale: 1; */
-      /* transform: translateX(0px); */
-      clip-path: inset(0 0 0 0);
-    }
-  } */ */
+}
